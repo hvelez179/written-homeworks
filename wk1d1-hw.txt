@@ -1,0 +1,21 @@
+Encapsulation
+
+Inheritance
+
+Polymorphism
+
+Interfaces
+
+Abstract Classes
+
+Java collection framework and arrays
+
+Generics
+
+MVC
+
+MVP
+
+M V VM
+
+
