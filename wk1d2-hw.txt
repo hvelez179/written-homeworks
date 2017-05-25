@@ -1,0 +1,58 @@
+What is Android?
+	An operating system for mobile apps owned by Google. Since it is built on Linux it is open source. It is used on phones, 
+	tablets, TVs, Cars, and wearable devices. Android currently holds an 88% market share on smartphones alone. 
+
+How do you track memory leaks?
+	A memory leak is caused when an applicaiton is allocating more memory than is necessary to run. This can affect the 
+	stability of a running application.  It may happen when switching between apps, when rotating orientation on a device, or 
+	developer code inefficiencies. There are many tools available for monitoring how memory is allocated. If during an analysis
+	of allocated memory it is noticed that the memory usage keeps increasing, then the determination is made that a memory leak
+	exists. Some of the tools used to monitor memory usage are the log messages created by Davlik and ART, depending on the Android
+	version being used. Usage can also be viewed in Android Studio using the Andoid Monitor tool. Overall memory allocations may 
+	also be viewed using adb command (adb shell dumpsys meminfo com.google.android.apps.maps -d). There are also several third 
+	party tools available for this tracking process. During development, it is a good practice to stress the app code as much as 
+	possible to determine if there are memory leaks. This may be done by switch quickly between apps, rotating orientation repeatedly, 
+	or using the Monkey Test framework. In order to fix suspected memory, the Garbage Collector may be invoked manually through
+	Android Studio. The best way to avoid memory leaks is to develop using the most efficient code possible. 
+
+What are the ways you use to debug a program?
+	To debug an Android app, we would use the debugger tool in Android Studio. We must use either a connected divice or an emmulator. 
+	Once the debugger is launched form the toolbar, we would then launch the Android Monitor to view the system log while in debug 
+	mode. We can also work with breakpoints to be able to test and analyze expressions seperately. Once paused on a breakpoint, 
+	we take a look at all variables. There is a variables pane and a watches pane to inspect variables. The Watches pane is a list 
+	of variables manually entered that persist between debugging sessions. Part of the debugging process also includes using the 
+	Monitor tool to view memory allocation. We can also use the screen capture and video recording features of Android Studio
+	to attach these to any bug reports. 
+
+What is Android's architecture?
+	Android's acrchitecture begins in the Application Layer. This high level layer is the installed applications like the phone, camera, etc. 
+	The next layer includes the Android Framework and Managers. This is the Java API. Next comes the Core (Native)Libraries and Android Runtime (ART). 
+	This layer is the Native Development Kit (NDK). After that comes the HAL, or Hardware Abtraction Layer. The last layer is the Linux Kernel, 
+	which houses hardaware and device drivers like the sensors, camera, audio, etc. 
+
+What is the difference between Dalvik and ART?
+	Dalvik Virtual Machine and Android RunTime are components used to compile and launch applications. ART is the predecessor to Davlik. 
+	It was introduced during KitKat 4.4 and replaced Davlik in Lolipop. There are several advantages with ART over Davlik as well as some
+	cons. An advantages of ART over Devlik is the actual compilation approach (Just in Time over Ahead of Time approach). This means that 
+	an app will open faster since the dex files are converted upon installation as opposed to each time the app is launched. This also saves
+	batttery life. ART makes Android apps more comparable to iOS apps in regards to smoothness and responsiveness. A disadvantage of 
+	ART over Devlik is that ART takes up more space, causing a problem for people with low space devices. Also, installing apps takes longer
+	with ART.  
+
+What are 9-patch images?
+	These are stretchable images that automatically resize to accomodate its content. They are mostly used for buttons that contain text. 
+	A 9-patch image contains a one pixel border and divides the image into 9 squares like a tic tac toe board. The 4 corners remain the 
+	same and the inner 5 stretch and repeat to the correct size. 
+
+How do you support phones and tablets?
+	In order to support phones and tablets, the first thing to do is to use alternative layouts that reposition views. I would also use 
+	the Fragment APIs, the Action Bar, and I would also implement flexible layouts. Framents allow for the separation of components which
+	can then be used to create multi-pane layouts for both phones and tablets. The Action bar provides a UI at the top of the screen to 
+	identify the app and provide and user actions. Since not all tablets are the same size and not all phones are either, the use of flexible
+	layouts allows the application to adapt to various screen sizes. 
+
+How do you support multiple languages?
+	Android SDK tools allow developers to create resource directories specific to any language or culture. Once it is decided which locations
+	to support. We can add directory resources in addition to the default directories at the top level of the project. These resources are
+	then referenced in the code either in the source code or other XML files like for the image view. 
+	

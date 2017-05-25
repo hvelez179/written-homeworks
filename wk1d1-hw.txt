@@ -1,21 +1,31 @@
-Encapsulation
+Encapsulation - one of the four fundamental concepts of object oriented programming. 
+                It is the process of hiding variables from access by other classes by declaring them private. They can then
+		only be accessed by using public setters and getters. The purpose here is to allow for changes in the protected 
+		without affecting the public interface. One can change a data type without having to rewrite code. 
 
-Inheritance
+Inheritance -   the process by which a subclass has the same properties of a parent class. 
 
-Polymorphism
+Polymorphism -  the ability of an object to take on many forms, as in when a parent class refers to a child class object. 
 
-Interfaces
+Interfaces -	a collection of methods, similar to a class. Except a class may be instantiated and not an interface.
 
-Abstract Classes
+Abstract Classes - like an interface, an abstract class allows for abstraction. That is the process of displaying only functionality
+		   to a user rather than how it works. As when sending an SMS, you simply type text and send but are not 
+		   made aware of the internal process. 
 
-Java collection framework and arrays
+Java collection framework and arrays - a collection framework provides a unified interface to store and manipulate elements that are 
+                   dynamically allocated. An array stores elements as well but in a liniar structure so they have fixed lengths. 
 
-Generics
+Generics -	allows programmers to write methods for sorting arrays of several different data types. 
 
-MVC
+MVC -   Model - View - Controller, software development architucture for creating user interfaces. It divides an application
+        into three inter-connected parts in order to separate how internal workings of information are presented to users.   
 
-MVP
+MVP -   Model – View – Presenter is a variation of the model–view–controller (MVC) architecture. In MVP the presenter assumes 
+        the functionality of the "middle-man". In MVP, all presentation logic is pushed to the presenter.
 
-M V VM
+
+M V VM - A further variation of the MVC architecture, the Model - View - ViewModel structure allows for even more separation 
+         of the user interface controls and their logic. 
 
 
