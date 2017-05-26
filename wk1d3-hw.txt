@@ -1,0 +1,38 @@
+What is an Activity?
+	An activity is one of the four main components of Android. It provides users with a window to interact with the device. 
+	Each screen in an app is an activity. 	
+
+How can I manage rotation changes?
+	Rotation changes are managed by the use of a method called onConfigurationChanged. 
+	
+What is the Android lifecycle?
+	The Android lifecycle is comprised of the following methods in order: onCreate, onStart, onResume, onPause, onStop, onDestroy, and onRestart.
+
+If I'm in Activity A and I enter Activity B, what are the callbacks triggered?
+	The callbacks triggerd for Activity A are onPause and onStop. For activity B the callbacks triggered are onCreate and onStart. 
+
+If I'm in Activity A, then I enter Activity B and then press the back button, what are the callbacks triggered?
+	Callbacks triggered in this scenario are onPause and onStop for Activity B and onStart, onResume and onRestart for Activity A. 
+
+How can I send information from an Activity to another Activity?
+	Passing information is achieved with Intent Extras. The data is passed from the sender with putExtra method and received with getExtra method. 
+
+What is the difference between an Activity and a Fragment?
+	An activity is each screen in an app. Fragments allow for the separation of components which
+	can then be used to create multi-pane layouts for both phones and tablets.
+
+When is the onDestroy method called?
+	onDestroy is called when an app is completely closed by a user.
+
+How can you guarantee backwards compatibility in Android?
+	The most efficient way to ensure backward compatibility is to use the Wrapper class. The methods in a Wrapper class reference the 
+	corresponding methods and return the same result.
+
+What are the lifecycle callbacks that are guaranteed to happen in an Activity?
+	The onPause method is the only callback that is garanteed to always be called. 
+
+Can I destroy an Activity?
+	Yes. An activity is destroyed when the application is closed. 	
+
+I want to get information back from an Activity, how can I do that?
+	To get information back from an activity we invoke the getExtra method in Intent Extras. 

@@ -10,7 +10,8 @@ How do you track memory leaks?
 	exists. Some of the tools used to monitor memory usage are the log messages created by Davlik and ART, depending on the Android
 	version being used. Usage can also be viewed in Android Studio using the Andoid Monitor tool. Overall memory allocations may 
 	also be viewed using adb command (adb shell dumpsys meminfo com.google.android.apps.maps -d). There are also several third 
-	party tools available for this tracking process. During development, it is a good practice to stress the app code as much as 
+	party tools available for this tracking process. Another tool is to use the Android Device Manager from the tools meny. 
+        This allows us to view all the files in explorer mode. During development, it is a good practice to stress the app code as much as 
 	possible to determine if there are memory leaks. This may be done by switch quickly between apps, rotating orientation repeatedly, 
 	or using the Monkey Test framework. In order to fix suspected memory, the Garbage Collector may be invoked manually through
 	Android Studio. The best way to avoid memory leaks is to develop using the most efficient code possible. 
@@ -46,7 +47,7 @@ What are 9-patch images?
 
 How do you support phones and tablets?
 	In order to support phones and tablets, the first thing to do is to use alternative layouts that reposition views. I would also use 
-	the Fragment APIs, the Action Bar, and I would also implement flexible layouts. Framents allow for the separation of components which
+	the Fragment APIs, the Action Bar, and I would also implement flexible layouts. Fragments allow for the separation of components which
 	can then be used to create multi-pane layouts for both phones and tablets. The Action bar provides a UI at the top of the screen to 
 	identify the app and provide and user actions. Since not all tablets are the same size and not all phones are either, the use of flexible
 	layouts allows the application to adapt to various screen sizes. 
