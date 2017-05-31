@@ -1,0 +1,77 @@
+HW Questions:
+
+GITHUB METHODOLOGY
+
+VOLATILE KEYWORD
+
+	Reading and writing of volatile variables causes the variable to be read or written to main memory. Reading from and writing to 
+	main memory is more expensive than accessing the CPU cache. Accessing volatile variables also prevent instruction reordering which is 
+	a normal performance enhancement technique. Thus, you should only use volatile variables when you really need to enforce visibility of 
+	variables.
+
+SYNCHRONIZED KEYWORD
+
+	The Java synchronized keyword is an essential tool in concurrent programming in Java. Its overall purpose is to only allow one thread 
+	at a time into a particular section of code thus allowing us to protect, for example, variables or data from being corrupted by 
+	simultaneous modifications from different threads
+
+TRANSIENT KEYWORD
+	
+	It marks a member variable not to be serialized when it is persisted to streams of bytes. When an object is transferred through the 
+	network, the object needs to be 'serialized'. Serialization converts the object state to serial bytes. Those bytes are sent over the 
+	network and the object is recreated from those bytes. Member variables marked by the java transient keyword are not transferred, they 
+	are lost intentionally.
+
+MAPS
+	An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value. This interface takes the
+	place of the Dictionary class, which was a totally abstract class rather than an interface.
+
+	The Map interface provides three collection views, which allow a map's contents to be viewed as a set of keys, collection of values, or
+        set of key-value mappings. The order of a map is defined as the order in which the iterators on the map's collection views return their
+	elements. Some map implementations, like the TreeMap class, make specific guarantees as to their order; others, like the HashMap class,
+	do not.
+
+LIST 
+
+	An ordered collection (also known as a sequence). The user of this interface has precise control over where in the list each element is
+	inserted. The user can access elements by their integer index (position in the list), and search for elements in the list.
+
+SET
+	
+	A collection that contains no duplicate elements. More formally, sets contain no pair of elements e1 and e2 such that e1.equals(e2), and 
+	at most one null element. As implied by its name, this interface models the mathematical set abstraction.
+
+	The Set interface places additional stipulations, beyond those inherited from the Collection interface, on the contracts of all 
+	constructors and on the contracts of the add, equals and hashCode methods. Declarations for other inherited methods are also included 
+	here for convenience. (The specifications accompanying these declarations have been tailored to the Set interface, but they do not 
+	contain any additional stipulations.)
+
+MAPS VS LIST VS SET
+	
+	A set cannot have duplicate elements. A list can. Maps do not allow duplicate keys. 
+
+ARRAYLIST VS LINKEDLIST
+	
+	The insert and remove operations give good performance in LinkedList compared to ArrayList. Hence if there is a requirement of 
+	frequent addition and deletion in application then LinkedList is a best choice.
+
+	2) Search (get method) operations are fast in Arraylist but not in LinkedList so if there are less add and remove operations 
+	and more search operations requirement, ArrayList would be your best bet.
+
+CONCURRENT PACKAGE (CONCURRENT HASHMAP, ATOMIC VARIABLES)
+
+	Utility classes commonly useful in concurrent programming. This package includes a few small standardized extensible frameworks, as well
+	as some classes that provide useful functionality and are otherwise tedious or difficult to implement.
+
+	Concurrent Hashmap:
+	A hash table supporting full concurrency of retrievals and high expected concurrency for updates. This class obeys the same functional 
+	specification as Hashtable, and includes versions of methods corresponding to each method of Hashtable. However, even though all 
+	operations are thread-safe, retrieval operations do not entail locking, and there is not any support for locking the entire table in a 
+	way that prevents all access. This class is fully interoperable with Hashtable in programs that rely on its thread safety but not on its 
+	synchronization details.
+
+	Atomic Varables:
+	A small toolkit of classes that support lock-free thread-safe programming on single variables. In essence, the classes in this package 
+	extend the notion of volatile values, fields, and array elements to those that also provide an atomic conditional update operation of 
+	the form:
+		 boolean compareAndSet(expectedValue, updateValue);
