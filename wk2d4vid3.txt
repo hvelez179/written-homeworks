@@ -1,0 +1,46 @@
+Notifications UX
+
+New notifcations features
+
+Julie Aranda
+	Research, began in 2015, they went to NY & NJ, focused on Attention Management
+	-Methodology: interview, observations, group discussions, data synthesis
+	-people dont wana miss something, but most notifications are not important
+	-user coping stragies, put the phone away, keep the divice quiet, block notifications, do nothing and be annoyed
+	-people have deleted apps due to too many notifications
+	-only two types people love, messeges from other people, VIP people, and reminders
+	-have also been to San Francisco, Portland, Vegas, Chicago, Houston, singapore, china
+	
+Rachel Garb
+	Channels, get some notices but not all from an app
+	-difine a channel for notification app and the user can make a decision
+	-categorize the notifications into groups
+	-touch and hold the notification to turn off a channel
+	Behavior Model
+	-Some people put up with it to not mess with settings
+	-current model has priority per notification
+	-new model has importance level for channels and less customization
+	-trading flexibility for simplicity
+	-set a notification per importance level
+	
+Justin Barber
+	Visual Hierarchy
+	-Different buckets : Major Ongoing, People to people, General, By the way	
+	-UI groups them together by importance
+	-Major Ongoing: time sensitive stuff, calls, directions, timer, etc
+		-appear right at the top, integrate the artwork 	
+	-People to people: messages, etc
+		-expose more lines of content (3 lines)
+		-direct reply coming soon
+	-General: timed reminders
+	-By the way: took notices from general that are not so urgent
+		-weather updates, suggestions, promotions
+		-simplified the presentation to make it more light weight
+		-automatically expire and dissappear by themselves
+		-nice looking drawer for notifications with cool animation
+		-snoozing: allow user to snooze a notification
+		- 
+
+
+
+

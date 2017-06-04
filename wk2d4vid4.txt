@@ -1,0 +1,39 @@
+Whats New in Android Development Tools (Google I/O '17)
+
+Jamal Eason
+	Android Stuido 2.3 update to unstarun, lint baseline, etc
+	Not going to 2.4, going to 4.0
+
+	The new emmulator:
+		-added google play store to the emulator
+		-proxy support
+		-open gl 3.
+		-app bug reporting system in the emulator
+		-layout inspector, helps debug layouts
+		-WebP support to convert jpeg for faster loads
+		
+
+Tor Norbye
+	-2.3 parameter hints
+	-emojis for comments, enable Kotlin, 
+	-decomplie button to convert other languages 
+	Layout editor
+	-better handling of errors
+	-added chains to distribute widgets
+	-contraint layout 1.1, using barriers to not overlap stuff
+	-support for sample data with sample data class
+	-adaptive icons
+	-device explorer to view file directories
+	-support for instant apps, wizards for feature modules
+	-improved APK anylizer
+
+Xavier Ducrohet
+	Things that make building faster
+	-Incremental Tasks, resource prossesing, java compilation, dexing, etc
+	-build cache, uses cache as a key rather than rerun caching
+	-multi modules advantages, improved caching, compilation avoidance, code reuse, api/dependency control
+	-build startup time, down significantly in Gradle 3.0
+	-parallel build bottlenecks, great improvement
+	-there is a new build flow for java 8 features
+	-dependency management, changed classpath to ApiElements
+	-

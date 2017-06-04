@@ -1,0 +1,37 @@
+The experts' guide to Android Development Tools - Google I/O 2016
+
+Esteban de la Canal
+	Source Editor
+		-command line launcher: studio --help to view dif
+		-Edit custom vm options: edit memory settings	
+		-contol J? to join strings..
+		-copy full strings to a clipboard to avoid retyping
+		-press tab instead of enter to change words in a funtion
+		-o. suggestions for 
+		-multi cursor support, to type something like a log.d to a list of names or like putting the .com on a list 
+		-toggle case command shiftA to apply an action to lots of things
+		-navigation command f12,shows all the functions
+		-go up and down on highlighting to do it per section
+		-post fix code templates to generate snippets of for loops
+		-command j tells you all the data types 
+		-cntrl space gives you the functions, cntrl shift space gives you all the correct ones
+		-command shift A local history
+Tor Norbye
+	Tech lead
+
+kathryn Shih
+	Native Tool
+		-functionality for C++
+
+
+Siva Velusamy
+	Debugger
+		-connecting debugger, shift F9 
+		-set breakpoints, mute breakpoints, conditional breakpoints, 
+		-how to examine the state, to track the lifecycle of an object
+			:you mark it kind of like creating a variable in the debugger
+
+Jerome Deochez
+	Build System (Gradle)
+		-if you reach the 65k method limits, use multidex to create additional files
+		-

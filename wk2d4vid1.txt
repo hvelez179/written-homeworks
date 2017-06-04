@@ -1,0 +1,47 @@
+What's new in Android (Google I/O '17)
+
+Dan Sandler
+	System UI & Launcher
+	-Adaptive Icons, cut into whatever shape
+	-shortcuts & widgets, pin requests for users
+	-notifications, added blocking, added quieting, notification channels, to allow people to customize notifications
+	-Security, different ID for apps and users on one device
+	-GooglePlay Protect, every app is screened prior to install
+	
+	
+
+Chet Hasse
+	Animation
+	-ability to reverse, AnimatorSet
+	-Autofill improvement
+	-Fonts in XML, font directory, font family
+	-Downloadable fonts
+	-Auto sizing text view
+	-AccessibilityService Utilities, language detection, fingerprint gestures
+	-vindViewById(), really tiny API now
+	-Runtime, concurrent copying makes things faster
+	-Support Library v26, emojiCompat, fonts, etc
+	-Physics Animation, velocity, force, springs
+	-Architecture Components, easier dev, lifeCycle approach is easier
+	-Behavior changes, background app location to save battery
+	-Alert window overlay, new layering policy
+ 	
+
+
+Romain Guy
+	UI/Graphics
+	-Picture in Picture, not just for TV anymore. 
+	-Color management, support for wide gamut displays
+	-multiple display, contolled with ActivityOptions
+	-shell dumpsys display, tells you the list of displays
+	-getMetrics(), lists info about media play, etc
+	-Playback, improved buffering control
+	-Seeking, choose your own behavior
+	-Recording, new support for stream format
+	-WebView, google safe browsing like chrome
+	-Media file access, seekable file descriptors
+	-cached data, stay below the quota with storageManager
+	-Kotlin, language support
+	-upgrades to java language, time and dates, paths, etc
+	- 
+

@@ -1,0 +1,52 @@
+Speeding Up Your Android Gradle Builds
+
+James Lau
+	Tips for faster builds
+	-make sure latest plug in is used
+	-avoid legacy multidex, its too slow, Android Studio takes care of this, dont use command line...
+	-disable multi APK generation, not needed during devlopment
+	-minimize the set of resources used, use resConfig
+	-disable png crunching, its good for release but not for dev build
+		:aaptOptions.cruncherEnabled = false
+		:convert png to WebP they are fasterm, be careful of OS version
+	-use Instant Run, it has been improved, only for API 21 and above
+	-avoid inadvertent changes, this changes the manifest and slows things way down
+	-use Crashilitics very carefully setting the flag for it
+	-do not use dynamic versions, causing dependency resolution to slow
+	-be careful about the amount of memory given to gradle
+	-enable the new Gradle cache, new caching mechanism:  org.gradle.caching=true
+	
+	Cumulative improvements
+	-Full build: 3X faster
+	-Incremental Java change: 12X faster
+	-Incremental resource change: 3X faster
+	
+Jerome Dochez
+	Making the most of Android Gradle plug in 3.0
+	-multi module project, gradle builds in parallel, makes things faster
+	-compilation avoidance, only recompile depending on the actual change
+	
+	Debugging and profiling build speed tools and best practice
+	-slow builds are not normal...
+	-3rd party plugins we must be carefull
+	-incorrect code organization, too many folders
+	-need to understand the build process to minimize time
+	-danger of doLast, avoid it gradle dont recognized it
+	-build your own plug in if possible
+	
+	Things you can try:	
+		--dry run
+		--info
+		--profile
+		--gradle profiler, tool provided by gradle to debug a slow build and report it to google. 
+
+		
+	
+
+
+
+
+
+
+
+	

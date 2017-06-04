@@ -1,0 +1,35 @@
+In App Billing v3 (Google I/O 2013)
+
+Bruno Oliviera
+
+The old issues with v2:
+
+-if the app is sleeping a different component has to handle the package
+
+
+The new way
+-billing is synchronous, the model works with google play for quick responses
+-google play keeps local cache and makes it less expensive
+-to check a users purchases, use getPurchases method
+-v3 manages all items and google play handles that, getBuyIntent
+-the two above is to avoid losing a purchase
+-Cunsumption APIs, make things go away after use
+-when to consume? 
+	-consume it when it is actually used
+	-immediately upon purchase, also on start up
+-Subcriptions, first ensure they are allowed, then launch the purchase flow for that
+	:when getPurchases is called, subcriptions come up too
+-careuful with teh UI thread, if blocked, user will get message not responding error to stop app or wait
+	safe: isBillingSupported, getBuyIntent
+	not safe: getPurchases, consumePurchase, getSkuDetails
+
+Security
+-Risk model, audience, likelyhood, item value, technical dificulty, total purchases, etc
+ 	:helps you decide how much security to use
+-Defenses
+	:developer payload, a tag that is attached to the purchase to the buyer
+	:signature verification, your app has a public key, google play signs purchase, always check signature
+	:Server side verification, secure the server side as well, not just the client side, and make sure the handshake is verified
+
+Sandbox
+	-mimicking a purchase for testing purposes in order to ensure it is secure
