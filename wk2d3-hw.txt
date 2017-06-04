@@ -1,0 +1,46 @@
+What is a service?
+
+	A service is a application component that runs in the background and does not use and interface. It can perform file input and output, 
+	handle newtwork transactions, and play music, all in the background. 
+		
+Describe the types of services in Androd. 
+	
+	Three types of services are scheduled, started, and bound. A scheduled service is executed by a JobScheduler API to execute at a specific time. A started service
+	is started by an activity using startService() and it runs indefinately in the background, even if the activity is destroyed. A bound service offers a clien-server
+	interface which allows the service to interact with components. 
+
+What is the intent service? 
+
+	Intent service is a base class for services. It handles requests asynchroneously and once started, it shuts off automatically upon completion.
+ 
+Service vs. intent service. 
+
+	A Service is an application component for a longer-running operation while not interacting with the user or to supply functionality for other applications to use.
+
+	IntentService Service is a base class for IntentService Services that handle asynchronous requests (expressed as Intents) on demand. Clients send requests 
+	through startService(Intent) calls; the service is started as needed, handles each Intent in turn using a worker thread, and stops itself when it runs out of work.	
+
+What is AIDL?
+
+	Android Interface Definition Language - it allows defined programming interfaces to communicate with each other via interprocess communication (IPC). 
+				           - it is used for allowing one application to access the memory of another.
+
+What are bound services? 
+
+	This service is used instead of AIDL if concurrent connections across different applications and multithreading is not needed. 
+
+What is the IBinder? 
+
+	This is the base interface for a remotable object. It is designed for high performance when interacting with in-process and cross-process calls. 
+
+What is the sync adapter? 
+
+	Encupsulates code for tasks that transfer data between the device and a server. 
+
+What are services used for? 
+
+	Used when something needs to run in the background. A good example is an app that plays music continuously.  
+
+What is your favorite android app?  
+
+	My favorite android app is Spotify. It is very user friendly and able to play songs I like by finding patterns in what I usually listen to. 
