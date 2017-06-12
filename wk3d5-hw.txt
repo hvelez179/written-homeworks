@@ -1,0 +1,21 @@
+Leaflet
+
+Leaflet’s small library makes it a great option for creating interactive JavaScript maps for mobile applications where load time is vital. However, 
+the long list of available plugins provides additional functionality and the library is supported by comprehensive documentation, making it ideal for 
+beginner and more experienced developers.
+
+Modest Maps
+
+The library offered by Modest Maps is even smaller than Leaflet’s, but the modular design makes it a great way to create simple maps or select only 
+the components relevant to each specific project, streamlining the development process.
+
+
+Polymaps
+
+This option is far more comprehensive than the previous two, allowing the creation of interactive tile-based maps or maps that leverage SVG-based vectors. 
+SVG (Scalable Vector Graphics) allows CSS styling options for web documents to be applied to map design. Polymaps JavaScript library also expertly 
+handles zooming for smooth performance.
+
+It should be noted that neither Modest Maps nor Polymaps enjoy much active development, but both are still usable. The author suggests several 
+other options that may be better suited depending on specific needs. The list of web mapping tools provided by the OpenGeo Foundation allows the mixing 
+of mapping libraries, but careful attention must be paid to the scope and production-readiness of each tool.
