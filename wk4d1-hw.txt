@@ -1,0 +1,47 @@
+1. Android life cycle: onCreate, onStart, onPause, onResume, onStop, on Destroy, onRestart - In place so we can handle different states of the app. 
+
+2. In intent is the messaging system in Android. For sharing info between components and starting those components.
+ 
+3. onResume, onPause, onStop for A...onCreate, onStart, onResume for B. 
+
+4. Once the back button is pressed, onPause, onStop for B...and onRestart, onStart, onResume for A. Finish() will be called when done. 
+
+5. Use intent extras to to send info between activities (putExtra and getExtra)
+
+6. Activity is one the 4 main components. Fragments require a parent activity. Fragments cannot exist without activities. Fragments are reusable segments of the UI. 
+	Fragments have their own lifecycle, correlates to the parent. 
+
+7. Fragment with an activity, we implement a communication interface. Defined on the Fragment class and implemented on the parent. 
+
+8. Same thing for both fragments and use the parent activity as a communication controler to be able to send info back and forth. 
+
+9. A service is a component designed to perform long running operations. Activities were not designed for that. Their function is to provide user interaction. 
+
+10. Scheduled, Started, and Bounded are the types of services. Also the subclass service. 
+
+11. Service life cycle: created, started, destroyed. They are called depending on the service. 
+
+12. Native class called HTTP URL connection to make a network request without using third party library. 
+
+13. To have Retrofit load API information: add the dependency to Gradle, generate response entity java classes using a tool, define retrofit service interface to declare
+	abstract methods that correlate to API endpoint, using retrofit anotations, define whether operation is get, post, put, or add/delete. Within the annotations, the 
+	endpoint is defined. The last step is to create the instance using its builder using builder.build method. That method will access any of the operations.
+ 
+14. Common library for parsing is moshi or jackson. 
+
+15. Firebase is a mobile backend that provides services. This platform enables things on the backend to be simplified, things like authentication, cloud messaging
+	realtime database, testing, etc. 
+
+16. To enable Firebase create the Studio project for unique id, then create a project in Firebase, use the wizard to authenticate, generate google service JSON file, 
+	then add it to the root of the app module directory, then add class path per the wizard, then apply the google services plug in at the bottom of Grade file, then
+	hit sync and then add the dependancies for the services being used. 
+
+17. For push notifications, we need the dependancies for it, create the subclass for the messaging service, override the default method and do whatever you want for it.  
+
+18. Unit testing: when you dissect apps logic into its most atomic way to make sure that unit of logic is working as expected. Especially for failure and error cases. 
+
+19. Instrumentation testing: once unit testing is done, you test that relationship with the platform being used by running it on the device either with an emmulator or 
+	real hardware. This will test how well your desing is working between the android context and business logic for stress testing.
+ 
+20. Behavioral testing: means you will have your test and make them fail. Not concerned with best practices, just make it run. The logic is not efficient but you have a 
+	starting point to make it go. 
