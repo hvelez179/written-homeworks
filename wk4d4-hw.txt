@@ -1,0 +1,59 @@
+What is DDL
+	Data Definition Language (DDL) is a standard for commands that define the different structures in a database. 
+	DDL statements create, modify, and remove database objects such as tables, indexes, and users.
+
+What is DML?
+	 data manipulation language (DML) is a family of syntax elements similar to a computer programming language used 
+	 for selecting, inserting, deleting and updating data in a database. Performing read-only queries of data is sometimes 
+	 also considered a component of DML.
+
+The types of JOIN statements and their difference
+	1. JOIN or INNER JOIN :
+		In this kind of a JOIN, we get all records that match the condition in both the tables, and records in both the tables 
+		that do not match are not reported.
+
+	2. OUTER JOIN :
+		OUTER JOIN retrieves either, the matched rows from one table and all rows in the other table Or, all rows in all tables 
+
+	There are three kinds of Outer Join :
+
+	2.1 LEFT OUTER JOIN or LEFT JOIN
+		This join returns all the rows from the left table in conjunction with the matching rows from the right table. 
+		If there are no columns matching in the right table, it returns NULL values.
+
+	2.2 RIGHT OUTER JOIN or RIGHT JOIN
+		This JOIN returns all the rows from the right table in conjunction with the matching rows from the left table. 
+		If there are no columns matching in the left table, it returns NULL values.
+
+	2.3 FULL OUTER JOIN or FULL JOIN
+		This JOIN combines LEFT OUTER JOIN and RIGHT OUTER JOIN. It returns row from either table when the conditions are met 
+		and returns NULL value when there is no match.
+	
+	3. NATURAL JOIN :
+		The JOIN is made on all the columns with the same name for equality. Removes duplicate columns from the result.
+
+	4. CROSS JOIN :
+		It is the Cartesian product of the two tables involved. The result of a CROSS JOIN will not make sense in most of the situations. 
+
+	5. SELF JOIN :
+	It is not a different form of JOIN, rather it is a JOIN (INNER, OUTER, etc) of a table to itself.
+
+
+WHERE clause
+	WHERE clauses are not mandatory clauses of SQL DML statements, but can be used to limit the number of rows affected by a SQL DML statement 
+	or returned by a query. In brief SQL WHERE clause is used to extract only those results from a SQL statement, such as: 
+	SELECT, INSERT, UPDATE, or DELETE statement.
+
+LIKE clause
+	The LIKE operator is used in a WHERE clause to search for a specified pattern in a column. There are two wildcards used in conjunction with 
+	the LIKE operator:
+
+	% - The percent sign represents zero, one, or multiple characters
+	_ - The underscore represents a single character
+	
+	The percent sign and the underscore can also be used in combinations!
+
+	LIKE Syntax
+	SELECT column1, column2, ...
+	ROM table_name
+	WHERE columnN LIKE pattern;
