@@ -1,0 +1,37 @@
+Differences between dagger 2 and Dagger 1
+
+Advantages of Dagger 2:
+
+-No more reflection - everything is done as concrete calls (ProGuard works with no configuration at all)
+-No more runtime graph composition - improves performance, including the per-request cases
+-Traceable - better generated code and no reflection help make the code readable and easy to follow
+-Supports method injection in addition to field and constructor injection which were the only two types supported by Dagger 1
+-Modules require less configuration than Dagger 1
+-Allows users to use any well-formed scope annotation. Dagger 1 only supported a single scope: @Singleton.
+
+
+Disadvantages:
+
+-The inject() method now has a strong type association with the injection target. This is good for debugging, but it complicates a 
+	common practice of injecting from base classes (e.g. base activities, fragments etc).
+-Component implementation requires rebuilding the project to appear and any injection-related compile errors result in the class 
+	disappearing (i.e. not being generated).
+-Doesn't support overrides. Modules that override for simple testing fakes can create a subclass of the module to emulate that behavior. 
+-Modules that use overrides and rely on dependency injection should be decomposed so that the overriden modules are instead represented 
+as a choice between two modules.
+
+NOTE: None of these difference matter anymore as Dagger is now deprecated as of September of 2016...
+
+
+What are the main parts of dagger ? (Hint there are three)
+	Three parts are 1. Modules 2. Components and 3. Dependancy Graphs
+
+
+What are the main Dagger annotations?
+
+	@Inject?—?base annotation whereby the “dependency is requested”
+	@Module?—?classes which methods “provide dependencies”
+	@Provide?—?methods inside @Module, which “tell Dagger how we want to build and present a dependency“
+	@Component?—?bridge between @Inject and @Module
+	@Scope?—?enables to create global and local singletons	
+	@Qualifier?—?if different objects of the same type are necessary
